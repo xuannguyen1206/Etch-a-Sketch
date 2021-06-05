@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-sketch</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+<h1>ETCH_A_SKETCH</h1>
+<section id ="menu">
+    <button>Pick</button>
+    <button>Rainbow</button>
+    <button>Erase</button>
+    <button>Clear</button>
+</section>
+<section class="container">
+    <div id="canvas"></div>
+</section>
+<label for="size">
+    <p>Pixel size</p>
+    <input type="range" min="1" max ="80" value =1 step="1">
+    <p>Smallest to Largest</p>
+</label>
+<script src="./script.js"></script>
+<footer>
+    made by <span>HXN</span> 
+</footer>
+</body>
+</html>
