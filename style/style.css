@@ -1,0 +1,139 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 5%;
+  background-size: 150% 100%;
+  -webkit-animation: gradient 7s linear infinite;
+          animation: gradient 7s linear infinite;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #37f9a6;
+}
+
+#menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+#menu label {
+  margin: auto 0;
+  background-color: black;
+  border: 1px solid white;
+}
+
+#menu button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: black;
+  color: #37f9a6;
+  border: 1px solid white;
+  font-weight: 700;
+}
+
+#menu button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0 2px 2px 0 #180909;
+          box-shadow: 0 2px 2px 0 #180909;
+}
+
+.container #canvas {
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  border: 1px solid red;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-shadow: 0 10px 10px;
+          box-shadow: 0 10px 10px;
+}
+
+.container #canvas div {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  margin-top: 5vh;
+}
+
+footer {
+  text-align: center;
+  color: white;
+}
+
+footer span {
+  font-size: 8vh;
+  font-family: 'Amatic SC', cursive;
+  color: #37f9a6;
+}
+
+@media (max-width: 400px) {
+  h1 {
+    margin-bottom: 10px;
+  }
+  #canvas {
+    height: 100vw;
+  }
+  #canvas .container {
+    height: 100%;
+  }
+  label {
+    margin-top: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
