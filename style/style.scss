@@ -3,28 +3,52 @@
     margin: 0;
     padding:0;
 }
-$importantLetter: red;
+$importantLetter: #37f9a6;
 $lessLetter: white;
 body{
-    background-color: #333;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 5%;
+    background-size: 150% 100%;
+    animation: gradient 7s linear infinite;
+    @keyframes gradient{
+        0%{
+            background-position: 0%;
+        }
+        50%{
+            background-position: 100%;
+        }
+        100%{
+            background-position: 0%;
+        }
+    }
 }
 h1{
     text-align: center;
-    margin-top: 5%;
+    
     margin-bottom: 30px;
     color: $importantLetter;
 }
 #menu{
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-bottom: 15px;
+    label{
+        margin: auto 0;
+        background-color: black;
+        border: 1px solid white;
+    }   
     button{
         padding:10px 20px;
         margin: 0 10px;
         background-color: black;
         color: $importantLetter;
+        border: 1px solid white;
+        font-weight: 700;
         &:hover{
-            background-color: rgb(133, 46, 46);
+            transform: scale(1.05);
+            box-shadow: 0 2px 2px 0 rgb(24, 9, 9);
         }
     }
 }
@@ -36,6 +60,7 @@ h1{
         margin: 0 auto;
         border: 1px solid red;
         display: grid;
+        box-shadow: 0 10px 10px;
         div{
         transition: all 0.5s ease ;
         }
@@ -57,8 +82,11 @@ footer{
         color: $importantLetter;
     }
 }
+
 @media( max-width: 400px){
-    
+    h1{
+        margin-bottom: 10px;
+    }
     #canvas{
         height: 100vw;
         .container{
