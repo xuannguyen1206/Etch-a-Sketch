@@ -40,6 +40,8 @@ body {
 
 h1 {
   text-align: center;
+  font-family: 'Amatic SC', cursive;
+  font-size: 5em;
   margin-bottom: 30px;
   color: #37f9a6;
 }
